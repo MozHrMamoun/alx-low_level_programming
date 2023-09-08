@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: this program shows if the given number is positive or negative or zero
+ * Description: this program show given number is positive or negative or zero
  *
  * Return: always 0 (success)
 */
@@ -16,10 +16,10 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
-		printf("%i is positive", n);
-	else if (n < 0)
-		printf("%i is negative", n);
+		printf("%i is positive\n", n);
+	else if (n == 0)
+		printf("%i is zero\n", n);
 	else
-		printf("%i is zero", n);
+		printf("%i is negative\n", n);
 	return (0);
 }

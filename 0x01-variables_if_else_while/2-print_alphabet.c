@@ -13,10 +13,10 @@ int main(void)
 {
 	char alpha = 'a';
 
-	for (int i = 0; i < 26 ; i++)
+	while (alpha <= 'z')
 	{
 		putchar(alpha);
-		alpha+=1;
+		alpha++;
 	}
 	putchar('\n');
 	return (0);

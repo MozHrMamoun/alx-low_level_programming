@@ -12,7 +12,7 @@ char *cap_string(char *str)
 
 	while (str[c])
 	{
-		while (!(str[c] >= 'a' || str[c] <= 'z'))
+		while (!(str[c] >= 'a' && str[c] <= 'z'))
 			c++;
 
 		if (str[c - 1] == ' ' ||

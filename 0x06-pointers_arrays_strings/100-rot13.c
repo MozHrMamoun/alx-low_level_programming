@@ -19,9 +19,9 @@ char *rot13(char *str)
 	{
 		for (j = 0; j < 52; j++)
 		{
-			if (s[i] == rot13[j])
+			if (str[i] == rot13[j])
 			{
-				s[i] = ROT13[j];
+				str[i] = ROT13[j];
 				break;
 			}
 		}
